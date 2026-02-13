@@ -22,51 +22,47 @@ img {
 /***** TYPOGRAPHY *****/
 
 .darumadrop {
-  font-family: "Darumadrop One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Darumadrop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
 .kosugi-maru {
-  font-family: "Kosugi Maru", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Kosugi Maru", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h1 {
-    font-size: 4.5em;
+    font-size: clamp(4rem, 2vw, 5.5rem);
     font-weight: 800;
 }
 
 h2 {
-  font-family: "Darumadrop One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #C27893;
-  size: 5em;
-  margin-bottom: 10px;
+    font-family: "Darumadrop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #C27893;
+    size: 5em;
+    margin-bottom: 10px;
 }
 
 p {
-  font-family: "Kosugi Maru", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #5E5E5E;
+    font-family: "Kosugi Maru", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #5E5E5E;
 }
 
-#date {
-    position: fixed;
-    top: 8%;
-    left: 45%;
+#date, #note {
     color: #E3A1B9;
+    font-size: clamp(0.9rem, 2vw, 1rem);
 }
 
 #intro {
-    position: fixed;
-    top: 25%;
-    left: 43.5%;
     color: #EDC2D3;
+    font-size: clamp(0.9rem, 2vw, 1rem);
 }
 
 /***** ELEMENTS *****/
@@ -76,11 +72,47 @@ body {
 }
 
 h1 {
-    position: fixed;
-    top: 10%;
-    left: 25%;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 12%;
+    width: 100%;
     text-align: center;
     color: #C27893;
+    padding: 30px;
+    line-height: 0.9em;
+}
+
+#date {
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 4%;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    line-height: 0.9em;
+}
+
+#intro {
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 9%;
+    width: 100%;
+    text-align: center;
+    padding: 18px;
+    line-height: 0.9em;
+}
+
+#note {
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    line-height: 0.9em;
 }
 
 /***** IMAGE SCROLL *****/
@@ -97,7 +129,7 @@ h1 {
 }
 
 .external {
-    margin-top: 8em;
+    margin-top: 10em;
     overflow: hidden;
     height: 100vh;
 }
@@ -225,8 +257,8 @@ section[id^="overlay"] article {
     box-sizing: border-box;
     background-color: #EBBCCD;
     padding: 20px;
-    width: 25vw;
-    height: 26vh;
+    width: 30vw;
+    height: 30vh;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -242,6 +274,7 @@ section[id^="overlay"] article {
   background-color: #FFFFFF;
   border: none;
   margin-top: 20px;
+  margin-bottom: 9px;
 }
 
 .close:hover {
@@ -251,13 +284,4 @@ section[id^="overlay"] article {
   color: #965069;
   background-color:#C27893;
   border: none;
-}
-
-/****** RESPONSIVE *****/
-
-/* Phone */
-@media screen and (max-width: 480px) {
-    h1 {
-        padding: 20px;
-    }
 }
