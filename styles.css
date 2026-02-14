@@ -292,6 +292,6 @@ section[id^="overlay"] article {
 @media screen and (max-width: 480px) {
     section[id^="overlay"] article {
         width: 80vw;
-        height: 50vh;
+        height: 30vh;
     }
 }
