@@ -285,3 +285,13 @@ section[id^="overlay"] article {
   background-color:#C27893;
   border: none;
 }
+
+/****** RESPONSIVE *****/
+
+/* Phone */
+@media screen and (max-width: 480px) {
+    section[id^="overlay"] article {
+        width: 80vw;
+        height: 50vh;
+    }
+}
